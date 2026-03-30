@@ -24,9 +24,7 @@ This project implements:
 |---|---|
 | Baseline (default Word2Vec) | 3.56% |
 | Best single param: `min_count=10` | 6.53% |
-| `epochs=20` | 5.41% |
-| `window=40` | 5.30% |
-| CBOW (`sg=0`) | 0.77% |
+| Best combined model | 12.32% |
 
 **Key findings:**
 - Skip-gram dramatically outperforms CBOW for music recommendation
@@ -132,7 +130,7 @@ The model learns musically meaningful relationships. Example similar-song lookup
 
 - **"Bohemian Rhapsody" (Queen)** → other classic rock anthems
 - **"Creep" (Radiohead)** → alternative 90s tracks
-- **Song algebra**: `Creep − Karma Police + Oasis - Wonderwall ≈ ?` (analogical reasoning in embedding space)
+- **Song algebra**: `Creep − Karma Police + Wonderwall ≈ ?` (analogical reasoning in embedding space)
 
 ---
 
